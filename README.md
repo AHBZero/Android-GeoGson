@@ -2,6 +2,8 @@
 
 Changed from lat/lng in decimal format to minutes of decimal format.
 
+Example: -934500 -> -25.96:57.50:30.00 -> -26.926666666666666
+
 
 #GeoGson
 
