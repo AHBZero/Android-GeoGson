@@ -1,3 +1,8 @@
+#About this fork
+
+Changed from lat/lng in decimal format to minutes of decimal format.
+
+
 #GeoGson
 
 GeoGson is a Gson implementation of the GeoJson specification (with some unofficial object support)
