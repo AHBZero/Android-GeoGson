@@ -58,7 +58,7 @@ public class LngLatAltAdapter implements JsonSerializer<LngLatAlt>, JsonDeserial
         double minLat = Math.abs(decLat % 1) * 60;
         double secLat = Math.abs(minLat % 1) * 60;
 
-        String resultLat = (Math.signum(value) == -1 ? "-" : "") + new BigDecimal(decLat).setScale(2, RoundingMode.HALF_UP).doubleValue() + ":" + new BigDecimal(minLat).setScale(2, RoundingMode.HALF_UP).doubleValue() + ":" + new BigDecimal(secLat).setScale(2, RoundingMode.HALF_UP).doubleValue();
+        String resultLat = (Math.signum(value) == -1 ? "-" : "") + (int) decLat + ":" + (int) minLat + ":" + new BigDecimal(secLat).setScale(2, RoundingMode.HALF_UP).doubleValue();
 
         return convert(resultLat);
     }
